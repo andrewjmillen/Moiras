@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,9 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Moiras | Acompañamiento en Procesos de Final de Vida",
-  description: "Brindamos acompañamiento integral en los procesos de final de vida y cronicidad avanzada, desde una perspectiva interdisciplinaria que contempla lo médico, lo social, lo legal y lo humano.",
+  description:
+    "Brindamos acompañamiento integral en los procesos de final de vida y cronicidad avanzada, desde una perspectiva interdisciplinaria que contempla lo médico, lo social, lo legal y lo humano.",
 };
 
 export default function RootLayout({
@@ -23,9 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="bg-background">
+    <html lang="es" className="bg-cream scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased font-sans`}
       >
         {children}
       </body>

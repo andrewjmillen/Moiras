@@ -72,6 +72,11 @@
   --color-slate: #414143;
   --color-cream: #F4F0EA;
   --color-velvet: #BCB7B1;
+  
+  /* Font families */
+  --font-sans: var(--font-geist-sans), 'Geist Fallback', system-ui, sans-serif;
+  --font-serif: var(--font-playfair), 'Playfair Display', 'Times New Roman', serif;
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback', monospace;
 }
 
 @layer base {
