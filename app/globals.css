@@ -1,48 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 0 0% 3.9%;
-  --card: 0 0% 100%;
-  --card-foreground: 0 0% 3.9%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 3.9%;
-  --primary: 0 0% 9%;
-  --primary-foreground: 0 0% 98%;
-  --secondary: 0 0% 96.1%;
-  --secondary-foreground: 0 0% 9%;
-  --muted: 0 0% 96.1%;
-  --muted-foreground: 0 0% 45.1%;
-  --accent: 0 0% 96.1%;
-  --accent-foreground: 0 0% 9%;
+  /* Moiras Brand Colors */
+  /* Cream - main background */
+  --background: 40 33% 94%;
+  /* Slate - main text */
+  --foreground: 0 2% 26%;
+  
+  /* Potter beige - card backgrounds */
+  --card: 30 24% 81%;
+  --card-foreground: 0 2% 26%;
+  
+  /* Potter beige - popover */
+  --popover: 30 24% 81%;
+  --popover-foreground: 0 2% 26%;
+  
+  /* Terracotta - primary accent */
+  --primary: 19 41% 59%;
+  --primary-foreground: 40 33% 94%;
+  
+  /* Velvet gray - secondary */
+  --secondary: 30 7% 71%;
+  --secondary-foreground: 0 2% 26%;
+  
+  /* Potter beige - muted */
+  --muted: 30 24% 81%;
+  --muted-foreground: 0 2% 40%;
+  
+  /* Velvet gray - accent */
+  --accent: 30 7% 71%;
+  --accent-foreground: 0 2% 26%;
+  
   --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 89.8%;
-  --input: 0 0% 89.8%;
-  --ring: 0 0% 3.9%;
+  --destructive-foreground: 40 33% 94%;
+  
+  /* Potter beige - borders */
+  --border: 30 24% 75%;
+  --input: 30 24% 75%;
+  --ring: 19 41% 59%;
   --radius: 0.5rem;
-}
-
-.dark {
-  --background: 0 0% 3.9%;
-  --foreground: 0 0% 98%;
-  --card: 0 0% 3.9%;
-  --card-foreground: 0 0% 98%;
-  --popover: 0 0% 3.9%;
-  --popover-foreground: 0 0% 98%;
-  --primary: 0 0% 98%;
-  --primary-foreground: 0 0% 9%;
-  --secondary: 0 0% 14.9%;
-  --secondary-foreground: 0 0% 98%;
-  --muted: 0 0% 14.9%;
-  --muted-foreground: 0 0% 63.9%;
-  --accent: 0 0% 14.9%;
-  --accent-foreground: 0 0% 98%;
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 14.9%;
-  --input: 0 0% 14.9%;
-  --ring: 0 0% 83.1%;
 }
 
 @theme inline {
@@ -69,6 +65,13 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Custom Moiras colors for direct use */
+  --color-terracotta: #C1886C;
+  --color-potter: #DACFC3;
+  --color-slate: #414143;
+  --color-cream: #F4F0EA;
+  --color-velvet: #BCB7B1;
 }
 
 @layer base {
