@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  /* Moiras Brand Colors */
+  /* Cream - main background */
+  --background: 40 33% 94%;
+  /* Slate - main text */
+  --foreground: 0 2% 26%;
+  
+  /* Potter beige - card backgrounds */
+  --card: 30 24% 81%;
+  --card-foreground: 0 2% 26%;
+  
+  /* Potter beige - popover */
+  --popover: 30 24% 81%;
+  --popover-foreground: 0 2% 26%;
+  
+  /* Terracotta - primary accent */
+  --primary: 19 41% 59%;
+  --primary-foreground: 40 33% 94%;
+  
+  /* Velvet gray - secondary */
+  --secondary: 30 7% 71%;
+  --secondary-foreground: 0 2% 26%;
+  
+  /* Potter beige - muted */
+  --muted: 30 24% 81%;
+  --muted-foreground: 0 2% 40%;
+  
+  /* Velvet gray - accent */
+  --accent: 30 7% 71%;
+  --accent-foreground: 0 2% 26%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 40 33% 94%;
+  
+  /* Potter beige - borders */
+  --border: 30 24% 75%;
+  --input: 30 24% 75%;
+  --ring: 19 41% 59%;
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Custom Moiras colors for direct use */
+  --color-terracotta: #C1886C;
+  --color-potter: #DACFC3;
+  --color-slate: #414143;
+  --color-cream: #F4F0EA;
+  --color-velvet: #BCB7B1;
+  
+  /* Font families */
+  --font-sans: var(--font-geist-sans), 'Geist Fallback', system-ui, sans-serif;
+  --font-serif: var(--font-playfair), 'Playfair Display', 'Times New Roman', serif;
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback', monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
