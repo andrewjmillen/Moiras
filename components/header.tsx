@@ -5,12 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Quiénes Somos", href: "#quienes-somos" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Cómo Trabajamos", href: "#como-trabajamos" },
-  { label: "Recursos", href: "#recursos" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Inicio", href: "/" },
+  { label: "Quiénes Somos", href: "/quienes-somos" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Cómo Trabajamos", href: "/#como-trabajamos" },
+  { label: "Recursos", href: "/#recursos" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 export function Header() {
@@ -20,7 +20,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-potter">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          <Link href="#inicio" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Moiras%20logo-bTugCLEfTgpwXh5mFlteGO0yLJRnTm.jpg"
               alt="Moiras Logo"
