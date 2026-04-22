@@ -50,14 +50,13 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="aspect-square relative max-w-md mx-auto">
-              <div className="absolute inset-0 bg-potter rounded-full border-4 border-terracotta/30" />
+          <div className="relative flex items-center justify-center">
+            <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[420px] lg:h-[420px] relative overflow-hidden rounded-full border-4 border-terracotta/30 bg-[#f5f2ed]">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Moiras%20logo-bTugCLEfTgpwXh5mFlteGO0yLJRnTm.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20grande-N9Fv1IqkFQuLK0Pr8GFCbbpV2WnqlT.png"
                 alt="Moiras - Las tres Moiras sosteniendo el hilo de la vida"
                 fill
-                className="object-contain p-8 rounded-full"
+                className="object-cover scale-[1.16] -translate-x-[3%] -translate-y-[3%]"
                 priority
               />
             </div>
