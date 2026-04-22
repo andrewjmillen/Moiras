@@ -52,12 +52,12 @@ export function Hero() {
 
           <div className="relative">
             <div className="aspect-square relative max-w-md mx-auto">
-              <div className="absolute inset-0 bg-potter rounded-full" />
+              <div className="absolute inset-0 bg-potter rounded-full border-4 border-terracotta/30" />
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Moiras%20logo-bTugCLEfTgpwXh5mFlteGO0yLJRnTm.jpg"
                 alt="Moiras - Las tres Moiras sosteniendo el hilo de la vida"
                 fill
-                className="object-contain p-8"
+                className="object-contain p-8 rounded-full"
                 priority
               />
             </div>
