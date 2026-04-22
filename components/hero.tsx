@@ -56,7 +56,7 @@ export function Hero() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20grande-N9Fv1IqkFQuLK0Pr8GFCbbpV2WnqlT.png"
                 alt="Moiras - Las tres Moiras sosteniendo el hilo de la vida"
                 fill
-                className="object-cover scale-[1.22] -translate-y-[8%]"
+                className="object-cover scale-[1.16] -translate-y-[8%]"
                 priority
               />
             </div>
