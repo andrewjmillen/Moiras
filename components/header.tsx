@@ -29,7 +29,7 @@ export function Header() {
               className="rounded-full"
             />
             <span className="text-2xl font-serif font-semibold text-slate">
-              Moiras
+              MOIRAS
             </span>
           </Link>
 

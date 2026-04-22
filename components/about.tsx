@@ -15,20 +15,13 @@ export function About() {
           <div>
             <p className="text-lg text-slate/80 leading-relaxed mb-6">
               Moiras nace de la necesidad de ofrecer un acompañamiento integral
-              y humano en uno de los momentos más significativos de la vida.
-              Nuestro nombre hace referencia a las Moiras de la mitología
-              griega, las tres hermanas que tejían el hilo del destino.
+              en uno de los momentos más significativos de la vida.
             </p>
-            <p className="text-lg text-slate/80 leading-relaxed mb-6">
+            <p className="text-lg text-slate/80 leading-relaxed">
               Somos un equipo de profesionales de la salud, el derecho y las
               ciencias sociales que trabajamos de manera coordinada para
               brindar contención, claridad y cuidado respetuoso a las personas
               y sus familias.
-            </p>
-            <p className="text-lg text-slate/80 leading-relaxed">
-              Nuestro enfoque no se limita al alivio de síntomas desde el punto
-              de vista farmacológico, sino que abarca también el estrés
-              emocional y vincular que todo el proceso conlleva.
             </p>
           </div>
 
