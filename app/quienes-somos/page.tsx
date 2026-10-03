@@ -9,7 +9,7 @@ const teamMembers = [
     role: "Abogado",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Maglio-8fKbVxZ1LMDsXUjhwGIa5jdzeoDHFC.png",
-    bio: "Abogado. Procurador (UBA). Diplomado en Salud Pública. Docente Universitario. Vicepresidente RedBioética UNESCO. Asesor Dirección Médica Htal. Fco. Javier Muñiz. Coordinador Comités de Bioética Sanatorios Finochietto y Otamendi. Miembro Comisiones Directivas de la Asociación Argentina de Salud Pública (AASAP), Sociedad Argentina de Vacunología y Epidemiologia (SAVE). Asesor Jurídico de la Sociedad Argentina de Infectología (SADI), de la Sociedad Argentina de Reumatología (SAR), de la Sociedad Argentina de Diabetología.",
+    bio: "Abogado. Procurador (UBA). Diplomado en Salud Pública. Docente Universitario. Vicepresidente RedBioética UNESCO. Asesor Dirección Médica Htal. Fco. Javier Muñiz. Coordinador Comités de Bioética Sanatorios Finochietto y Otamendi. Miembro Comisiones Directivas de la Asociación Argentina de Salud Pública (AASAP), Sociedad Argentina de Vacunología y Epidemiologia (SAVE). Asesor Jurídico de la Sociedad Argentina de Infectología (SADI), de la Sociedad Argentina de Reumatología (SAR), de la Sociedad Argentina de Diabetología. Coordinador de Área de Promoción de Derechos de Fundación Huésped. Miembro del Comité Internacional de Bioética de la UNESCO (IBC).",
   },
   {
     name: "Débora Lema",
@@ -93,31 +93,8 @@ export default function QuienesSomosPage() {
           </div>
         </section>
 
-        {/* Mission Section */}
-        <section className="py-16 lg:py-24 bg-cream">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-serif font-semibold text-slate mb-8 text-balance">
-                Nuestra Misión
-              </h2>
-              <p className="text-lg text-slate/70 leading-relaxed mb-6">
-                Moiras nace de la necesidad de ofrecer un acompañamiento
-                integral y humano en uno de los momentos más significativos de
-                la vida. Nuestro nombre hace referencia a las Moiras de la
-                mitología griega, las tres hermanas que tejían el hilo del
-                destino.
-              </p>
-              <p className="text-lg text-slate/70 leading-relaxed">
-                Nuestro enfoque no se limita al alivio de síntomas desde el
-                punto de vista farmacológico, sino que abarca también el estrés
-                emocional y vincular que todo el proceso conlleva.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
-        <section className="py-16 lg:py-24 bg-terracotta/10">
+        <section className="py-10 lg:py-10 bg-terracotta/10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl font-serif font-semibold text-slate mb-6 text-balance">
               ¿Querés conocernos mejor?
