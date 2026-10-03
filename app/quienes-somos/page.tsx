@@ -94,7 +94,7 @@ export default function QuienesSomosPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 lg:py-24 bg-terracotta/10">
+        <section className="py-10 lg:py-10 bg-terracotta/10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl font-serif font-semibold text-slate mb-6 text-balance">
               ¿Querés conocernos mejor?
