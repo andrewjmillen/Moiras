@@ -17,7 +17,7 @@ export function Contact() {
     const whatsappMessage = encodeURIComponent(
       `Hola, mi nombre es ${formData.name}. ${formData.message}`
     );
-    window.open(`https://wa.me/5491100000000?text=${whatsappMessage}`, "_blank");
+    window.open(`https://wa.me/5491136884699?text=${whatsappMessage}`, "_blank");
   };
 
   return (
@@ -57,10 +57,10 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold text-cream">Email</h3>
                   <a
-                    href="mailto:consultorio.moiras@gmail.com"
+                    href="mailto:consultoriomoiras@gmail.com"
                     className="text-cream/70 hover:text-terracotta transition-colors"
                   >
-                    consultorio.moiras@gmail.com
+                    consultoriomoiras@gmail.com
                   </a>
                 </div>
               </div>
@@ -78,12 +78,40 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold text-cream">WhatsApp</h3>
                   <a
-                    href="https://wa.me/5491100000000"
+                    href="https://wa.me/5491136884699"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-cream/70 hover:text-terracotta transition-colors"
                   >
-                    +54 9 11 0000-0000
+                    +54 9 11 3688-4699
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-terracotta/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg
+                    className="w-6 h-6 text-terracotta"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <rect width="16" height="16" x="4" y="4" rx="4" />
+                    <circle cx="12" cy="12" r="3.5" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-cream">Instagram</h3>
+                  <a
+                    href="https://instagram.com/consultoriomoiras"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cream/70 hover:text-terracotta transition-colors"
+                  >
+                    @consultoriomoiras
                   </a>
                 </div>
               </div>
