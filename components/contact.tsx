@@ -57,10 +57,10 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold text-cream">Email</h3>
                   <a
-                    href="mailto:contacto@moiras.com.ar"
+                    href="mailto:consultorio.moiras@gmail.com"
                     className="text-cream/70 hover:text-terracotta transition-colors"
                   >
-                    contacto@moiras.com.ar
+                    consultorio.moiras@gmail.com
                   </a>
                 </div>
               </div>

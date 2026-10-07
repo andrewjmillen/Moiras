@@ -53,10 +53,10 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-cream/60">
               <li>
                 <a
-                  href="mailto:contacto@moiras.com.ar"
+                  href="mailto:consultorio.moiras@gmail.com"
                   className="hover:text-terracotta transition-colors"
                 >
-                  contacto@moiras.com.ar
+                  consultorio.moiras@gmail.com
                 </a>
               </li>
               <li>
