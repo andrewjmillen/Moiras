@@ -24,7 +24,13 @@ export function WhatWeDoInteractive() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,28rem)] lg:gap-20">
+    <div
+      className={`mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 lg:gap-20 ${
+        activeIndex === null
+          ? "lg:grid-cols-1"
+          : "lg:grid-cols-[minmax(0,1fr)_minmax(20rem,28rem)]"
+      }`}
+    >
       <div
         className={`relative flex min-h-[44rem] w-full items-center transition-all duration-700 ease-out sm:min-h-[48rem] ${
           activeIndex === null ? "justify-center" : "justify-start lg:pl-8"
@@ -55,7 +61,10 @@ export function WhatWeDoInteractive() {
         </div>
       </div>
 
-      <div className="min-h-48" aria-live="polite">
+      <div
+        className={`min-h-48 ${activeIndex === null ? "hidden" : ""}`}
+        aria-live="polite"
+      >
         {activeIndex !== null && (
           <div className="border-l-2 border-terracotta/40 pl-6 opacity-100 transition-opacity duration-500">
             <p className="font-serif text-2xl leading-tight text-slate">
