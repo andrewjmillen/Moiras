@@ -11,13 +11,26 @@ export function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Consulta de ${formData.name}`);
-    const body = encodeURIComponent(
-      `Nombre: ${formData.name}\nEmail: ${formData.email}\nTeléfono: ${formData.phone || "No indicado"}\nTipo de consulta: ${formData.type}\n\nMensaje:\n${formData.message}`
-    );
-    window.location.href = `mailto:consultoriomoiras@gmail.com?subject=${subject}&body=${body}`;
+    setStatus("sending");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      setStatus(response.ok ? "success" : "error");
+      if (response.ok) {
+        setFormData({ name: "", email: "", phone: "", type: "", message: "" });
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -206,10 +219,21 @@ export function Contact() {
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-terracotta text-cream font-medium rounded-lg hover:bg-terracotta/90 transition-colors"
+                disabled={status === "sending"}
+                className="w-full px-8 py-4 bg-terracotta text-cream font-medium rounded-lg hover:bg-terracotta/90 transition-colors disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Enviar mensaje
+                {status === "sending" ? "Enviando..." : "Enviar mensaje"}
               </button>
+              {status === "success" && (
+                <p className="text-sm text-slate" role="status">
+                  Gracias. Recibimos tu mensaje y te contactaremos pronto.
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-red-700" role="alert">
+                  No pudimos enviar el mensaje. Intentá nuevamente.
+                </p>
+              )}
             </form>
           </div>
         </div>
