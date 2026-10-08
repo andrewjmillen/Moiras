@@ -43,9 +43,6 @@ export function WhatWeDoInteractive() {
                     : "border-potter bg-cream/95 hover:z-20 hover:scale-105 hover:border-terracotta/70"
                 }`}
               >
-                <span className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-terracotta">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
                 <span className="font-serif text-2xl leading-tight text-slate sm:text-[1.7rem]">
                   {service.title}
                 </span>
@@ -72,7 +69,7 @@ export function WhatWeDoInteractive() {
         ) : (
           <div className="border-l-2 border-terracotta/40 pl-6">
             <p className="mb-2 text-sm font-medium uppercase tracking-wide text-terracotta">
-              {String(activeIndex + 1).padStart(2, "0")} · Más información
+              Más información
             </p>
             <p className="font-serif text-2xl leading-tight text-slate">
               {services[activeIndex].title}
