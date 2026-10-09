@@ -32,7 +32,7 @@ export function WhatWeDoInteractive() {
       }`}
     >
       <div
-        className={`relative flex min-h-[44rem] w-full items-center transition-all duration-700 ease-out sm:min-h-[48rem] ${
+        className={`relative flex min-h-[44rem] w-full items-center transition-all duration-[2800ms] ease-out sm:min-h-[48rem] ${
           activeIndex === null ? "justify-center" : "justify-start lg:pl-8"
         }`}
       >
