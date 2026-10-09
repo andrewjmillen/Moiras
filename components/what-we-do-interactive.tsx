@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const services = [
+const privateServices = [
   {
     title: "Planificación de los cuidados a futuro",
     detail:
@@ -20,8 +20,32 @@ const services = [
   },
 ];
 
-export function WhatWeDoInteractive() {
+const institutionalServices = [
+  {
+    title: "Interconsultas bioéticas",
+    detail:
+      "Interconsultas bioéticas para servicios y equipos de salud. Análisis de casos complejos, toma de decisiones compartidas y abordaje de conflictos, implementación de medidas de retiro, control de síntomas, sedación y weaning terminal, etc.",
+  },
+  {
+    title: "Asesoramiento legal e implementación de protocolos específicos",
+    detail:
+      "Asesoramiento ético y legal. Derechos del paciente, adecuación del esfuerzo terapéutico, consentimiento informado y planificación anticipada de cuidados, directivas anticipadas, rechazos de tratamiento.",
+  },
+  {
+    title: "Docencia y capacitación de equipos",
+    detail:
+      "Docencia y capacitación de equipos. Humanización de los cuidados, generación de redes entre servicios, resolución de cuestiones administrativas, UCIs abiertas, asesoramiento en gestión de internación domiciliaria.",
+  },
+];
+
+export function WhatWeDoInteractive({
+  audience = "private",
+}: {
+  audience?: "private" | "institutional";
+}) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const services = audience === "institutional" ? institutionalServices : privateServices;
+  const movesLeft = audience === "private";
 
   return (
     <div
@@ -33,7 +57,11 @@ export function WhatWeDoInteractive() {
     >
       <div
         className={`relative flex min-h-[44rem] w-full items-center transition-all duration-[2800ms] ease-out sm:min-h-[48rem] ${
-          activeIndex === null ? "justify-center" : "justify-start lg:pl-8"
+          activeIndex === null
+            ? "justify-center"
+            : movesLeft
+              ? "justify-start lg:pl-8"
+              : "justify-end lg:pr-8"
         }`}
       >
         <div className="relative flex w-full max-w-[30rem] flex-col items-center -space-y-20 sm:-space-y-24">
@@ -66,7 +94,11 @@ export function WhatWeDoInteractive() {
         aria-live="polite"
       >
         {activeIndex !== null && (
-          <div className="border-l-2 border-terracotta/40 pl-6 opacity-100 transition-opacity duration-500">
+          <div
+            className={`border-terracotta/40 pl-6 opacity-100 transition-opacity duration-500 ${
+              movesLeft ? "border-l-2" : "border-r-2 pr-6 pl-0 text-right"
+            }`}
+          >
             <p className="font-serif text-2xl leading-tight text-slate">
               {services[activeIndex].title}
             </p>
