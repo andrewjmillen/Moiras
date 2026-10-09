@@ -54,14 +54,6 @@ export default function QueHacemosPage() {
           </div>
         </section>
 
-        <section className="bg-terracotta/10 px-4 py-10 text-center sm:px-6">
-          <h2 className="font-serif text-3xl font-semibold text-slate sm:text-4xl">
-            Estamos para acompañarte
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-slate/70">
-            Podemos ayudarte a ordenar preguntas, anticipar decisiones y construir un plan de cuidado posible.
-          </p>
-        </section>
       </main>
       <Footer />
     </>
