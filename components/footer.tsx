@@ -25,15 +25,26 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="flex items-center gap-5 sm:gap-8">
+          <div className="flex items-center justify-end">
             <h4 className="sr-only">Contacto</h4>
-            <ul className="flex items-center gap-5 text-sm text-cream/60">
+            <ul className="flex items-center justify-end gap-5 text-cream/60">
               <li>
                 <a
                   href="mailto:consultoriomoiras@gmail.com"
-                  className="hover:text-terracotta transition-colors"
+                  aria-label="Enviar email a Consultorio Moiras"
+                  className="inline-flex transition-colors hover:text-terracotta"
                 >
-                  consultoriomoiras@gmail.com
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.7"
+                    aria-hidden="true"
+                  >
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m4 7 8 6 8-6" />
+                  </svg>
                 </a>
               </li>
               <li>
@@ -42,7 +53,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram de Consultorio Moiras"
-                  className="inline-flex items-center gap-2 hover:text-terracotta transition-colors"
+                  className="inline-flex transition-colors hover:text-terracotta"
                 >
                   <svg
                     className="h-5 w-5"
@@ -56,7 +67,6 @@ export function Footer() {
                     <circle cx="12" cy="12" r="4" />
                     <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
                   </svg>
-                  Instagram
                 </a>
               </li>
             </ul>
