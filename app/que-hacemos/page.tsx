@@ -45,7 +45,7 @@ export default function QueHacemosPage() {
           </div>
         </section>
 
-        <section className="px-4 py-16 sm:px-6 lg:py-24">
+        <section className="bg-terracotta/10 px-4 py-16 sm:px-6 lg:py-24">
           <div className="mx-auto max-w-7xl">
             <h3 className="mb-10 text-center font-serif text-3xl font-semibold text-slate sm:text-4xl">
               Atención y abordaje institucional
