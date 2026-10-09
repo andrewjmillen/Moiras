@@ -31,7 +31,7 @@ export function Footer() {
               {[
                 { label: "Inicio", href: "#inicio" },
                 { label: "Quiénes Somos", href: "#quienes-somos" },
-                { label: "Servicios", href: "#servicios" },
+                { label: "Qué Hacemos", href: "/que-hacemos" },
                 { label: "Cómo Trabajamos", href: "#como-trabajamos" },
                 { label: "Recursos", href: "#recursos" },
                 { label: "Contacto", href: "#contacto" },
@@ -61,12 +61,25 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/5491136884699"
+                  href="https://instagram.com/consultoriomoiras"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-terracotta transition-colors"
+                  aria-label="Instagram de Consultorio Moiras"
+                  className="inline-flex items-center gap-2 hover:text-terracotta transition-colors"
                 >
-                  WhatsApp
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.7"
+                    aria-hidden="true"
+                  >
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                  Instagram
                 </a>
               </li>
             </ul>
