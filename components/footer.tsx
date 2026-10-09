@@ -35,7 +35,7 @@ export function Footer() {
                   className="inline-flex transition-colors hover:text-terracotta"
                 >
                   <svg
-                    className="h-5 w-5"
+                    className="h-10 w-10"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -56,7 +56,7 @@ export function Footer() {
                   className="inline-flex transition-colors hover:text-terracotta"
                 >
                   <svg
-                    className="h-5 w-5"
+                    className="h-10 w-10"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
