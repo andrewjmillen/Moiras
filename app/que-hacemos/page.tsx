@@ -19,22 +19,25 @@ export default function QueHacemosPage() {
               QUÉ HACEMOS
             </p>
               <h1 className="font-serif text-4xl font-semibold text-slate text-balance sm:text-5xl">
-                Acompañamos decisiones complejas cuando más importa contar con claridad, cuando decidir no es fácil, cuando las respuestas no son evidentes.
+                Acompañamos decisiones complejas cuando más importa: cuando decidir no es fácil, cuando las respuestas no son evidentes.
               </h1>
+          </div>
+        </section>
+
+        <section className="bg-potter/20 px-4 py-16 sm:px-6 lg:py-20">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="font-serif text-3xl font-semibold text-slate sm:text-4xl">
+              Servicios adaptados a cada necesidad
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate/70">
+              Ofrecemos acompañamiento tanto a particulares como a instituciones,
+              adaptando nuestro enfoque a cada situación específica.
+            </p>
           </div>
         </section>
 
         <section className="px-4 py-16 sm:px-6 lg:py-24">
           <div className="mx-auto max-w-7xl">
-            <div className="mx-auto mb-14 max-w-2xl text-center">
-              <h2 className="font-serif text-3xl font-semibold text-slate sm:text-4xl">
-                Servicios adaptados a cada necesidad
-              </h2>
-              <p className="mt-5 text-lg leading-relaxed text-slate/70">
-                Ofrecemos acompañamiento tanto a particulares como a instituciones,
-                adaptando nuestro enfoque a cada situación específica.
-              </p>
-            </div>
             <h3 className="mb-10 text-center font-serif text-3xl font-semibold text-slate sm:text-4xl">
               Atención a particulares
             </h3>
