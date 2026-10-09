@@ -16,14 +16,11 @@ export default function QueHacemosPage() {
         <section className="bg-potter/30 px-4 py-16 sm:px-6 lg:py-24">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-4 text-sm font-medium uppercase tracking-wide text-terracotta">
-              Qué hacemos
+              QUÉ HACEMOS
             </p>
-            <h1 className="font-serif text-4xl font-semibold text-slate text-balance sm:text-5xl">
-              Acompañamos decisiones complejas cuando más importa contar con claridad
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate/70">
-              Cuando decidir no es fácil, cuando las respuestas no son evidentes.
-            </p>
+              <h1 className="font-serif text-4xl font-semibold text-slate text-balance sm:text-5xl">
+                Acompañamos decisiones complejas cuando más importa contar con claridad, cuando decidir no es fácil, cuando las respuestas no son evidentes.
+              </h1>
           </div>
         </section>
 
@@ -38,6 +35,9 @@ export default function QueHacemosPage() {
                 adaptando nuestro enfoque a cada situación específica.
               </p>
             </div>
+            <h3 className="mb-10 text-center font-serif text-3xl font-semibold text-slate sm:text-4xl">
+              Atención a particulares
+            </h3>
             <WhatWeDoInteractive />
           </div>
         </section>
