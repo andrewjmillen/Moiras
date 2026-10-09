@@ -19,7 +19,7 @@ export default function QueHacemosPage() {
               QUÉ HACEMOS
             </p>
               <h1 className="font-serif text-4xl font-semibold text-slate text-balance sm:text-5xl">
-                Acompañamos decisiones complejas cuando más importa contar con claridad, cuando decidir no es fácil, cuando las respuestas no son evidentes.
+                Acompañamos decisiones complejas cuando más importa: cuando decidir no es fácil, cuando las respuestas no son evidentes.
               </h1>
           </div>
         </section>
