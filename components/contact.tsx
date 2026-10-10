@@ -225,19 +225,59 @@ export function Contact() {
                 {status === "sending" ? "Enviando..." : "Enviar mensaje"}
               </button>
               {status === "success" && (
-                <p className="text-sm text-slate" role="status">
-                  Gracias. Recibimos tu mensaje y te contactaremos pronto.
+                <p className="sr-only" role="status">
+                  Muchas gracias por tu mensaje. Te contactaremos pronto.
                 </p>
               )}
               {status === "error" && (
-                <p className="text-sm text-red-700" role="alert">
-                  No pudimos enviar el mensaje. Intentá nuevamente.
+                <p className="sr-only" role="alert">
+                  No pudimos enviar el mensaje. Por favor, escribinos directamente a consultoriomoiras@gmail.com
                 </p>
               )}
             </form>
           </div>
         </div>
       </div>
+
+      {status === "success" || status === "error" ? (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate/55 px-6 backdrop-blur-sm"
+          role="presentation"
+          onClick={() => setStatus("idle")}
+        >
+          <div
+            className="flex aspect-square w-full max-w-md flex-col items-center justify-center rounded-full border-8 border-potter bg-cream p-12 text-center shadow-2xl"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="contact-feedback-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div
+              className={`mb-5 flex h-14 w-14 items-center justify-center rounded-full ${
+                status === "success" ? "bg-terracotta text-cream" : "bg-slate text-cream"
+              }`}
+              aria-hidden="true"
+            >
+              {status === "success" ? "✓" : "!"}
+            </div>
+            <h2
+              id="contact-feedback-title"
+              className="font-serif text-2xl font-semibold text-slate sm:text-3xl"
+            >
+              {status === "success"
+                ? "Muchas gracias por tu mensaje. Te contactaremos pronto."
+                : "No pudimos enviar el mensaje. Por favor, escribinos directamente a consultoriomoiras@gmail.com"}
+            </h2>
+            <button
+              type="button"
+              className="mt-6 rounded-full border border-slate/20 px-5 py-2 text-sm font-medium text-slate transition-colors hover:bg-potter/30"
+              onClick={() => setStatus("idle")}
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      ) : null}
     </section>
   );
 }
