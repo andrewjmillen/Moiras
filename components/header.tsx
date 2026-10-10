@@ -8,7 +8,7 @@ const navItems = [
   { label: "Inicio", href: "/" },
   { label: "Quiénes Somos", href: "/quienes-somos" },
   { label: "Qué Hacemos", href: "/que-hacemos" },
-  { label: "Cómo Trabajamos", href: "/#como-trabajamos" },
+  { label: "Cómo Trabajamos", href: "/como-trabajamos" },
   { label: "Recursos", href: "/#recursos" },
   { label: "Contacto", href: "/#contacto" },
 ];
