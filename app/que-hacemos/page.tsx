@@ -55,7 +55,7 @@ export default function QueHacemosPage() {
           </div>
         </section>
 
-        <section className="bg-terracotta/10 py-10 lg:py-10">
+        <section className="bg-potter/20 py-10 lg:py-10">
           <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
             <h2 className="mb-6 font-serif text-3xl font-semibold text-slate text-balance sm:text-4xl">
               ¿Querés conocernos mejor?
