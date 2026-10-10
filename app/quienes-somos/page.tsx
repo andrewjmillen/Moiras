@@ -83,9 +83,6 @@ export default function QuienesSomosPage() {
                     <h2 className="text-3xl sm:text-4xl font-serif font-semibold text-slate mb-2">
                       {member.name}
                     </h2>
-                    <p className="text-terracotta font-medium text-lg mb-6">
-                      {member.role}
-                    </p>
                     <p className="text-slate/70 leading-relaxed text-lg">
                       {member.bio}
                     </p>
