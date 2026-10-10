@@ -52,7 +52,7 @@ function WorkProcess({
   steps: typeof privateSteps;
 }) {
   return (
-    <ol className="grid gap-4 lg:grid-cols-2">
+    <ol className="mx-auto grid max-w-4xl gap-4">
       {steps.map((step, index) => (
         <li
           key={step.title}
