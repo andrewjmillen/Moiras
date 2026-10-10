@@ -39,6 +39,9 @@ export default function QuienesSomosPage() {
               <p className="text-terracotta font-medium mb-4 tracking-wide uppercase text-sm">
                 Quiénes Somos
               </p>
+              <p className="mb-5 font-serif text-xl text-slate/80 sm:text-2xl">
+                Asesoramiento en decisiones de salud
+              </p>
               <h1 className="text-4xl sm:text-5xl font-serif font-semibold text-slate text-balance">
                 Un equipo interdisciplinario comprometido con el cuidado
               </h1>
