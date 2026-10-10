@@ -22,9 +22,12 @@ export default function QueHacemosPage() {
             <p className="mb-4 text-sm font-medium uppercase tracking-wide text-terracotta">
               QUÉ HACEMOS
             </p>
-              <h1 className="font-serif text-4xl font-semibold text-slate text-balance sm:text-5xl">
-                Acompañamos decisiones complejas cuando más importa: cuando decidir no es fácil, cuando las respuestas no son evidentes.
+              <h1 className="font-serif text-3xl font-semibold text-slate text-balance sm:text-4xl">
+                Acompañamos decisiones complejas que prioricen la autonomía y dignidad.
               </h1>
+              <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-slate/80 sm:text-lg">
+                Te ayudamos a diseñar tu plan de cuidado futuro, asegurando que tus decisiones y límites médicos se respeten siempre.
+              </p>
           </div>
         </section>
 
