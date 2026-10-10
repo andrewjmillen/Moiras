@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { WhatWeDoInteractive } from "@/components/what-we-do-interactive";
@@ -54,6 +55,22 @@ export default function QueHacemosPage() {
           </div>
         </section>
 
+        <section className="bg-terracotta/10 py-10 lg:py-10">
+          <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+            <h2 className="mb-6 font-serif text-3xl font-semibold text-slate text-balance sm:text-4xl">
+              ¿Querés conocernos mejor?
+            </h2>
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-slate/70">
+              Estamos aquí para acompañarte. Contactanos para una consulta inicial sin compromiso.
+            </p>
+            <Link
+              href="/#contacto"
+              className="inline-flex items-center justify-center rounded-lg bg-terracotta px-8 py-4 font-medium text-cream transition-colors hover:bg-terracotta/90"
+            >
+              Contactanos
+            </Link>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
