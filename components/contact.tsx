@@ -272,7 +272,12 @@ export function Contact() {
                   <span className="mt-2 block">Te contactaremos pronto.</span>
                 </>
               ) : (
-                "No pudimos enviar el mensaje. Por favor, escribinos directamente a consultoriomoiras@gmail.com"
+                <>
+                  No pudimos enviar el mensaje.
+                  <span className="mt-2 block">
+                    Por favor, escribinos directamente a consultoriomoiras@gmail.com
+                  </span>
+                </>
               )}
             </h2>
             <button
