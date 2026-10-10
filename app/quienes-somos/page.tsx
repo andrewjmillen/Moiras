@@ -36,11 +36,11 @@ export default function QuienesSomosPage() {
         <section className="py-16 lg:py-24 bg-potter/30">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-terracotta font-medium mb-4 tracking-wide uppercase text-sm">
-                Quiénes Somos
-              </p>
               <p className="mb-5 font-serif text-xl text-slate/80 sm:text-2xl">
                 Asesoramiento en decisiones de salud
+              </p>
+              <p className="text-terracotta font-medium mb-4 tracking-wide uppercase text-sm">
+                Quiénes Somos
               </p>
               <h1 className="text-4xl sm:text-5xl font-serif font-semibold text-slate text-balance">
                 Un equipo interdisciplinario comprometido con el cuidado
