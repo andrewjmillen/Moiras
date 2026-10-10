@@ -16,12 +16,12 @@ export default function QueHacemosPage() {
       <main className="pt-20">
         <section className="bg-potter/30 px-4 py-16 sm:px-6 lg:py-24">
           <div className="mx-auto max-w-4xl text-center">
+            <p className="mb-5 font-serif text-xl text-slate/80 sm:text-2xl">
+              Asesoramiento en decisiones de salud
+            </p>
             <p className="mb-4 text-sm font-medium uppercase tracking-wide text-terracotta">
               QUÉ HACEMOS
             </p>
-              <p className="mb-5 font-serif text-xl text-slate/80 sm:text-2xl">
-                Asesoramiento en decisiones de salud
-              </p>
               <h1 className="font-serif text-4xl font-semibold text-slate text-balance sm:text-5xl">
                 Acompañamos decisiones complejas cuando más importa: cuando decidir no es fácil, cuando las respuestas no son evidentes.
               </h1>
