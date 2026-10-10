@@ -262,11 +262,18 @@ export function Contact() {
             </div>
             <h2
               id="contact-feedback-title"
-              className="font-serif text-2xl font-semibold text-slate sm:text-3xl"
+              className={`font-serif font-semibold text-slate ${
+                status === "success" ? "text-2xl sm:text-3xl" : "text-lg sm:text-xl"
+              }`}
             >
-              {status === "success"
-                ? "Muchas gracias por tu mensaje. Te contactaremos pronto."
-                : "No pudimos enviar el mensaje. Por favor, escribinos directamente a consultoriomoiras@gmail.com"}
+              {status === "success" ? (
+                <>
+                  Muchas gracias por tu mensaje.
+                  <span className="mt-2 block">Te contactaremos pronto.</span>
+                </>
+              ) : (
+                "No pudimos enviar el mensaje. Por favor, escribinos directamente a consultoriomoiras@gmail.com"
+              )}
             </h2>
             <button
               type="button"
