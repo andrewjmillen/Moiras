@@ -19,7 +19,7 @@ export async function POST(request: Request) {
       return Response.json({ error: "Ingresá un email válido." }, { status: 400 });
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resend = new Resend(process.env.Resend_Contact_Form);
     const { error } = await resend.emails.send(
       {
         from: "Moiras <onboarding@resend.dev>",
