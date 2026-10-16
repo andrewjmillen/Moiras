@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Acompañamiento en Procesos de Final de Vida y Cuidados Paliativos en Argentina",
+  title: "Moiras | Acompañamiento en Procesos de Final de Vida y Cuidados Paliativos en Argentina",
   description:
     "Equipo interdisciplinario especializado en cuidados paliativos, bioética y asesoramiento en decisiones de fin de vida. Brindamos contención médica, legal, social y emocional.",
 };
