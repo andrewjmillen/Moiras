@@ -1,6 +1,6 @@
 const approachGroups = [
   {
-    title: "AUTONOMÍA, DECISIONES SANITARIAS Y PLANIFICACIÓN ANTICIPADA",
+    title: "Autonomía, decisiones sanitarias y planificación anticipada",
     items: [
       "Redacción personalizada de directivas anticipadas de salud, actualización y revocación.",
       "Planificación anticipada de la atención, de los cuidados, registro de deseos y preferencias.",
@@ -11,7 +11,7 @@ const approachGroups = [
     ],
   },
   {
-    title: "DIGNIDAD, GESTIÓN Y CUIDADOS DE FIN DE VIDA",
+    title: "Dignidad, gestión y cuidados de fin de vida",
     items: [
       "Acompañamiento en decisiones de no iniciar tratamientos desproporcionados.",
       "Asesoramiento ante la solicitud de retiro o no instauración de medidas de soporte vital, en los supuestos clínicos y jurídicos correspondientes.",
@@ -24,7 +24,7 @@ const approachGroups = [
     ],
   },
   {
-    title: "ENFERMEDAD CRÍTICA CRÓNICA, DEPENDENCIA Y TECNOLOGÍA MÉDICA",
+    title: "Enfermedad crítica crónica, dependencia y tecnología médica",
     items: [
       "Orientación a familias de personas con ventilación mecánica prolongada.",
       "Acompañamiento en decisiones sobre traqueostomía y soporte ventilatorio.",
@@ -35,7 +35,7 @@ const approachGroups = [
     ],
   },
   {
-    title: "ASPECTOS LEGALES, ASESORAMIENTO JURÍDICO Y SUCESORIO",
+    title: "Aspectos legales, asesoramiento jurídico y sucesorio",
     items: [
       "Orientación inicial ante el fallecimiento de un familiar (disposiciones relativas a exequias y voluntad personal, dentro del marco legal aplicable).",
       "Asesoramiento sobre declaratoria de herederos, gestión jurídica de trámites sucesorios.",
@@ -46,7 +46,7 @@ const approachGroups = [
     ],
   },
   {
-    title: "ACOMPAÑAMIENTO DEL DUELO Y DESPUÉS DEL FALLECIMIENTO",
+    title: "Acompañamiento del duelo y después del fallecimiento",
     items: [
       "Orientación inicial a familiares después de una muerte sobre pasos administrativos pendientes.",
       "Acompañamiento para comprender decisiones clínicas tomadas durante la internación.",
@@ -56,7 +56,7 @@ const approachGroups = [
     ],
   },
   {
-    title: "CONSULTORÍA INSTITUCIONAL Y BIOÉTICA CLÍNICA",
+    title: "Consultoría institucional y bioética clínica",
     items: [
       "Análisis de casos clínicos complejos y capacitación sobre deliberación bioética.",
       "Asesoramiento para crear o fortalecer comités.",
@@ -66,7 +66,7 @@ const approachGroups = [
     ],
   },
   {
-    title: "CAPACITACIÓN Y RESOLUCIÓN DE CONFLICTOS",
+    title: "Capacitación y resolución de conflictos",
     items: [
       "Desarrollo de herramientas de documentación y seguimiento: elaboración de protocolos de AET y final de vida, protocolos de directivas anticipadas y de consentimientos informados, procedimientos para decisiones de no reanimación y de reuniones con familias, revisión de políticas de atención centrada en la persona y guías institucionales de comunicación de malas noticias, en colaboración con profesionales competentes.",
       "Cursos, talleres y ateneos sobre bioética clínica aplicada: deliberación y análisis de casos, comunicación con pacientes y familias, conflictos éticos en terapia intensiva, cuidados paliativos y planificación anticipada, enfermedad crítica crónica y dependencia tecnológica, derechos del paciente y marco normativo argentino, autonomía y toma de decisiones por representación.",
