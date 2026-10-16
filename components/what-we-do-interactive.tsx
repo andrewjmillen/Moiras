@@ -64,33 +64,48 @@ export function WhatWeDoInteractive({
               : "justify-end lg:pr-8"
         }`}
       >
-        <div className="relative flex w-full max-w-[30rem] flex-col items-center -space-y-20 sm:-space-y-24">
+        <div className="relative flex w-full max-w-[30rem] flex-col items-center gap-6 lg:gap-0 lg:-space-y-20">
           {services.map((service, index) => {
             const isActive = activeIndex === index;
             return (
-              <button
-                key={service.title}
-                type="button"
-                aria-expanded={isActive}
-                aria-label={`${service.title}. ${isActive ? "Ocultar detalle" : "Mostrar detalle"}`}
-                onClick={() => setActiveIndex(index)}
-                className={`relative flex aspect-square w-72 flex-col items-center justify-center rounded-full border-2 px-12 text-center transition-all duration-700 ease-out focus-visible:z-30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-terracotta/30 sm:w-80 lg:w-[21rem] ${
-                  isActive
-                    ? "z-20 scale-110 border-terracotta bg-potter shadow-xl"
-                    : "z-10 border-potter bg-cream/95 hover:z-20 hover:scale-105 hover:border-terracotta/70"
-                }`}
-              >
-                <span className="font-serif text-2xl leading-tight text-slate sm:text-[1.7rem]">
-                  {service.title}
-                </span>
-              </button>
+              <div key={service.title} className="flex w-full flex-col items-center">
+                <button
+                  type="button"
+                  aria-expanded={isActive}
+                  aria-label={`${service.title}. ${isActive ? "Ocultar detalle" : "Mostrar detalle"}`}
+                  onClick={() => setActiveIndex(isActive ? null : index)}
+                  className={`relative flex aspect-square w-72 flex-col items-center justify-center rounded-full border-2 px-12 text-center transition-all duration-700 ease-out focus-visible:z-30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-terracotta/30 sm:w-80 lg:w-[21rem] ${
+                    isActive
+                      ? "z-20 scale-105 border-terracotta bg-potter shadow-xl lg:scale-110"
+                      : "z-10 border-potter bg-cream/95 hover:z-20 hover:scale-105 hover:border-terracotta/70"
+                  }`}
+                >
+                  <span className="font-serif text-2xl leading-tight text-slate sm:text-[1.7rem]">
+                    {service.title}
+                  </span>
+                </button>
+
+                {isActive && (
+                  <div
+                    className="mt-6 w-full border-t-2 border-terracotta/40 px-5 pt-5 text-center lg:hidden"
+                    aria-live="polite"
+                  >
+                    <p className="font-serif text-xl leading-tight text-slate">
+                      {service.title}
+                    </p>
+                    <p className="mt-3 text-base leading-relaxed text-slate/70">
+                      {service.detail}
+                    </p>
+                  </div>
+                )}
+              </div>
             );
           })}
         </div>
       </div>
 
       <div
-        className={`min-h-48 ${activeIndex === null ? "hidden" : ""}`}
+        className={`hidden min-h-48 lg:block ${activeIndex === null ? "hidden" : ""}`}
         aria-live="polite"
       >
         {activeIndex !== null && (
