@@ -41,12 +41,6 @@ export function Hero() {
               >
                 Contactanos
               </Link>
-              <Link
-                href="#quienes-somos"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-slate/20 text-slate font-medium rounded-lg hover:border-terracotta hover:text-terracotta transition-colors"
-              >
-                Conocé más
-              </Link>
             </div>
           </div>
 
