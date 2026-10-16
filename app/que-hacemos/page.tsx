@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { WhatWeDoInteractive } from "@/components/what-we-do-interactive";
+import { ApproachTools } from "@/components/approach-tools";
 
 export const metadata = {
   title: "Qué Hacemos | Moiras",
@@ -48,6 +49,8 @@ export default function QueHacemosPage() {
             <WhatWeDoInteractive audience="institutional" />
           </div>
         </section>
+
+        <ApproachTools />
 
         <section className="bg-potter/20 py-10 lg:py-10">
           <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
