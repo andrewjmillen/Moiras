@@ -64,7 +64,9 @@ export function WhatWeDoInteractive({
               : "justify-end lg:pr-8"
         }`}
       >
-        <div className="relative flex w-full max-w-[30rem] flex-col items-center gap-6 lg:gap-0 lg:-space-y-20">
+        <div className={`relative flex w-full max-w-[30rem] flex-col items-center lg:gap-0 lg:-space-y-20 ${
+          activeIndex === null ? "-space-y-20" : "gap-6"
+        }`}>
           {services.map((service, index) => {
             const isActive = activeIndex === index;
             return (
