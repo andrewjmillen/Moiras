@@ -25,6 +25,21 @@ export const metadata: Metadata = {
     "Equipo interdisciplinario especializado en cuidados paliativos, bioética y asesoramiento en decisiones de fin de vida. Brindamos contención médica, legal, social y emocional.",
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Moiras",
+  description: "Equipo interdisciplinario especializado en cuidados paliativos, bioética y asesoramiento en decisiones de fin de vida.",
+  email: "consultoriomoiras@gmail.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://moiras.com.ar",
+  sameAs: ["https://instagram.com/consultoriomoiras"],
+  areaServed: {
+    "@type": "Country",
+    name: "Argentina",
+  },
+  knowsAbout: ["Cuidados paliativos", "Bioética", "Decisiones de fin de vida"],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,6 +50,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased font-sans`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         {children}
         <Analytics />
         <SpeedInsights />
