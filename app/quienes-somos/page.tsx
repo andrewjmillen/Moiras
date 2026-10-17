@@ -3,6 +3,13 @@ import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
+export const metadata = {
+  title: "Quiénes Somos | Moiras",
+  description:
+    "Conocé al equipo interdisciplinario de Moiras y nuestra mirada humana, médica, social y legal sobre los procesos de final de vida.",
+};
+
+
 const teamMembers = [
   {
     name: "Ignacio Maglio",
