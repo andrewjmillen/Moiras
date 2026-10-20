@@ -5,9 +5,9 @@ export function Footer() {
   return (
     <footer className="bg-slate border-t border-velvet/20">
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-          <div className="sm:max-w-sm">
-            <Link href="#inicio" className="flex items-center gap-3 mb-4">
+        <div className="grid items-center gap-6 sm:grid-cols-3 sm:gap-8">
+          <div className="flex justify-center sm:justify-start">
+            <Link href="#inicio" className="flex items-center gap-3">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Moiras%20logo-bTugCLEfTgpwXh5mFlteGO0yLJRnTm.jpg"
                 alt="Moiras Logo"
@@ -21,18 +21,18 @@ export function Footer() {
             </Link>
           </div>
 
-          <div className="flex flex-col items-center gap-2 text-center text-cream/60 sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+          <div className="flex flex-col items-center gap-2 text-center text-cream/70">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7mro2J0u4ZGoZv7C9G63oV2lEHbzqP.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/png-transparent-argentina-national-football-team-flag-of-argentina-flag-miscellaneous-flag-logo-thumbnail-TNkvFMBNwkS53DAsPDRukGVxds196J.png"
               alt="Bandera de Argentina"
-              width={64}
-              height={64}
-              className="h-12 w-12 object-contain"
+              width={72}
+              height={72}
+              className="h-14 w-14 rounded-full object-contain"
             />
             <span className="text-sm">Buenos Aires, Argentina</span>
           </div>
 
-          <div className="flex items-center justify-end">
+          <div className="flex justify-center sm:justify-end">
             <h4 className="sr-only">Contacto</h4>
             <ul className="flex items-center justify-end gap-5 text-cream/60">
               <li>
