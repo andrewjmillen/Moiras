@@ -20,8 +20,9 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <div className="max-w-xl">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="max-w-xl">
             <p className="text-terracotta font-medium mb-4 tracking-wide uppercase text-sm">
               Cuidado Integral
             </p>
@@ -47,10 +48,10 @@ export function Hero() {
                 Solicitar Entrevista
               </a>
             </div>
-        </div>
+          </div>
 
-        <div className="relative mt-12 flex items-center justify-center lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:flex lg:w-1/2">
-            <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-terracotta/30 bg-[#f5f2ed] sm:h-96 sm:w-96 lg:h-[420px] lg:w-[420px]">
+          <div className="relative flex items-center justify-center">
+            <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[420px] lg:h-[420px] relative overflow-hidden rounded-full border-4 border-terracotta/30 bg-[#f5f2ed]">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20grande-N9Fv1IqkFQuLK0Pr8GFCbbpV2WnqlT.png"
                 alt="Moiras - Las tres Moiras sosteniendo el hilo de la vida"
@@ -61,6 +62,7 @@ export function Hero() {
             </div>
           </div>
         </div>
+      </div>
     </section>
   );
 }
