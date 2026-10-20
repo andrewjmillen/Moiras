@@ -27,10 +27,16 @@ export function Hero() {
               Cuidado Integral
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-slate leading-tight text-balance">
-              Acompañamiento clínico, ético y legal en enfermedad avanzada y final de vida
+              Acompañamiento clínico, ético y legal para decidir sobre salud y cuidados a lo largo de la vida.
             </h1>
             <p className="mt-6 text-lg text-slate/70 leading-relaxed">
-              Asesoramos y acompañamos cuando decidir no es fácil, cuando las respuestas no son evidentes.
+              <strong className="font-semibold text-slate">
+                Cada vida, sus circunstancias. Cada decisión, su importancia.
+              </strong>
+              <span className="my-6 block">
+                Ofrecemos asesoramiento interdisciplinario para anticipar decisiones, ejercer derechos y abordar situaciones complejas relacionadas con la salud y los cuidados.
+              </span>
+              Para personas, familias y equipos de salud.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link
