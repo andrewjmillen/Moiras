@@ -2,11 +2,14 @@ import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-export const metadata = {
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
   title: "Cómo Trabajamos | Moiras",
   description:
     "Conocé cómo acompañamos decisiones de salud desde una mirada integral, humanizada e interdisciplinaria.",
-};
+  path: "/como-trabajamos",
+});
 
 const privateSteps = [
   {
@@ -83,7 +86,7 @@ export default function ComoTrabajamosPage() {
             <p className="mb-5 font-serif text-xl text-slate/80 sm:text-2xl">
               Asesoramiento en decisiones de salud
             </p>
-            <p className="mb-4 text-sm font-medium uppercase tracking-wide text-terracotta">
+            <p className="mb-4 text-sm font-medium uppercase tracking-wide text-terracotta-dark">
               CÓMO TRABAJAMOS
             </p>
             <h1 className="font-serif text-3xl font-semibold text-slate text-balance sm:text-4xl">
@@ -136,7 +139,7 @@ export default function ComoTrabajamosPage() {
                 href="https://calendar.app.google/vhVL6J277Zmc8qSQ9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg border border-terracotta px-8 py-4 font-medium text-terracotta transition-colors hover:bg-terracotta/10"
+                className="inline-flex items-center justify-center rounded-lg border border-terracotta px-8 py-4 font-medium text-terracotta-dark transition-colors hover:bg-terracotta/10"
               >
                 Solicitar Entrevista
               </a>

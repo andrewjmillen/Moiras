@@ -23,7 +23,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="max-w-xl">
-            <p className="text-terracotta font-medium mb-4 tracking-wide uppercase text-sm">
+            <p className="text-terracotta-dark font-medium mb-4 tracking-wide uppercase text-sm">
               Cuidado Integral
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-slate leading-tight text-balance">
@@ -49,7 +49,7 @@ export function Hero() {
                 href="https://calendar.app.google/vhVL6J277Zmc8qSQ9"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-terracotta text-terracotta font-medium rounded-lg hover:bg-terracotta hover:text-cream transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-terracotta text-terracotta-dark font-medium rounded-lg hover:bg-terracotta/10 transition-colors"
               >
                 Solicitar Entrevista
               </a>

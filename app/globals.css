@@ -68,6 +68,8 @@
   
   /* Custom Moiras colors for direct use */
   --color-terracotta: #C1886C;
+  --color-terracotta-dark: #864F36;
+  --color-terracotta-light: #D9A68C;
   --color-potter: #DACFC3;
   --color-slate: #414143;
   --color-cream: #F4F0EA;
