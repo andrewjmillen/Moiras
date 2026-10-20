@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { MoirasConcept } from "@/components/moiras-concept";
 
 export const metadata = {
   title: "Quiénes Somos | Moiras",
@@ -60,6 +61,8 @@ export default function QuienesSomosPage() {
             </div>
           </div>
         </section>
+
+        <MoirasConcept />
 
         {/* Team Section */}
         <section className="py-16 lg:py-24">
