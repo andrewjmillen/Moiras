@@ -50,27 +50,34 @@ export function Contact() {
               entrevista donde evaluaremos juntos el mejor abordaje.
             </p>
 
-            <a
-              href="https://calendar.app.google/vhVL6J277Zmc8qSQ9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-3 rounded-lg border-2 border-terracotta px-6 py-3 text-terracotta font-medium transition-colors hover:bg-terracotta hover:text-cream"
-            >
-              <svg
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                aria-hidden="true"
-              >
-                <circle cx="8" cy="8" r="3" />
-                <circle cx="16" cy="8" r="3" />
-                <path strokeLinecap="round" d="M2.5 18.5c.7-3 2.5-4.5 5.5-4.5s4.8 1.5 5.5 4.5M10.5 18.5c.7-3 2.5-4.5 5.5-4.5 3 0 4.8 1.5 5.5 4.5" />
-                <path strokeLinecap="round" d="M10.5 12h3" />
-              </svg>
-              Solicitar Entrevista
-            </a>
+            <div className="mt-8 flex items-start gap-4">
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-terracotta/20">
+                <svg
+                  className="h-6 w-6 text-terracotta"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  aria-hidden="true"
+                >
+                  <circle cx="8" cy="8" r="3" />
+                  <circle cx="16" cy="8" r="3" />
+                  <path strokeLinecap="round" d="M2.5 18.5c.7-3 2.5-4.5 5.5-4.5s4.8 1.5 5.5 4.5M10.5 18.5c.7-3 2.5-4.5 5.5-4.5 3 0 4.8 1.5 5.5 4.5" />
+                  <path strokeLinecap="round" d="M10.5 12h3" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-cream">Solicitar Entrevista</h3>
+                <a
+                  href="https://calendar.app.google/vhVL6J277Zmc8qSQ9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cream/70 transition-colors hover:text-terracotta"
+                >
+                  Reservar una primera entrevista
+                </a>
+              </div>
+            </div>
 
             <div className="mt-10 space-y-6">
               <div className="flex items-start gap-4">
