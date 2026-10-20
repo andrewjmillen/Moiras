@@ -39,6 +39,14 @@ export function Hero() {
               >
                 Contactanos
               </Link>
+              <a
+                href="https://calendar.app.google/vhVL6J277Zmc8qSQ9"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-terracotta text-terracotta font-medium rounded-lg hover:bg-terracotta hover:text-cream transition-colors"
+              >
+                Solicitar Entrevista
+              </a>
             </div>
           </div>
 
