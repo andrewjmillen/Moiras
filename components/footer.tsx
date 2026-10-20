@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="bg-slate border-t border-velvet/20">
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="sm:max-w-sm">
             <Link href="#inicio" className="flex items-center gap-3 mb-4">
               <Image
@@ -19,6 +19,17 @@ export function Footer() {
                 Moiras
               </span>
             </Link>
+          </div>
+
+          <div className="flex flex-col items-center gap-2 text-center text-cream/60 sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7mro2J0u4ZGoZv7C9G63oV2lEHbzqP.png"
+              alt="Bandera de Argentina"
+              width={64}
+              height={64}
+              className="h-12 w-12 object-contain"
+            />
+            <span className="text-sm">Buenos Aires, Argentina</span>
           </div>
 
           <div className="flex items-center justify-end">
