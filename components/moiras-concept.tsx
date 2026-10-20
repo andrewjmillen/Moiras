@@ -2,7 +2,7 @@ export function MoirasConcept() {
   return (
     <section className="bg-potter/30 py-8 lg:py-12">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <p className="mb-4 text-sm font-medium uppercase tracking-wide text-terracotta">
+        <p className="mb-4 text-sm font-medium uppercase tracking-wide text-terracotta-dark">
           Relato breve de un concepto
         </p>
         <div className="space-y-6 text-lg leading-relaxed text-slate/75">

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { whatsappUrl } from "@/lib/site";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -38,7 +40,7 @@ export function Contact() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           <div>
-            <p className="text-terracotta font-medium mb-4 tracking-wide uppercase text-sm">
+            <p className="text-terracotta-light font-medium mb-4 tracking-wide uppercase text-sm">
               Contacto
             </p>
             <h2 className="text-3xl sm:text-4xl font-serif font-semibold text-cream text-balance">
@@ -80,6 +82,33 @@ export function Contact() {
             </div>
 
             <div className="mt-10 space-y-6">
+              {whatsappUrl && (
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-terracotta/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg
+                      className="w-6 h-6 text-terracotta"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 20l1.3-4.2A8 8 0 1 1 8.4 18.8L4 20z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-cream">WhatsApp</h3>
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cream/70 hover:text-terracotta transition-colors"
+                    >
+                      Escribinos por WhatsApp
+                    </a>
+                  </div>
+                </div>
+              )}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-terracotta/20 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg
@@ -253,6 +282,14 @@ export function Contact() {
               >
                 {status === "sending" ? "Enviando..." : "Enviar mensaje"}
               </button>
+              <p className="text-sm leading-relaxed text-slate/70">
+                Tus datos son confidenciales y los usamos solo para responder tu consulta. Más información en
+                nuestra{" "}
+                <Link href="/privacidad" className="font-medium text-terracotta-dark underline underline-offset-2">
+                  política de privacidad
+                </Link>
+                .
+              </p>
               {status === "success" && (
                 <p className="sr-only" role="status">
                   Muchas gracias por tu mensaje. Te contactaremos pronto.

@@ -4,11 +4,14 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { MoirasConcept } from "@/components/moiras-concept";
 
-export const metadata = {
+import { pageMetadata, siteUrl } from "@/lib/site";
+
+export const metadata = pageMetadata({
   title: "Quiénes Somos | Moiras",
   description:
     "Conocé al equipo interdisciplinario de Moiras y nuestra mirada humana, médica, social y legal sobre los procesos de final de vida.",
-};
+  path: "/quienes-somos",
+});
 
 
 const teamMembers = [
@@ -35,9 +38,27 @@ const teamMembers = [
   },
 ];
 
+const teamSchema = {
+  "@context": "https://schema.org",
+  "@graph": teamMembers.map((member) => ({
+    "@type": "Person",
+    name: member.name,
+    jobTitle: member.role,
+    image: member.image,
+    description: member.bio,
+    worksFor: { "@id": `${siteUrl}/#organization` },
+  })),
+};
+
 export default function QuienesSomosPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(teamSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
@@ -47,7 +68,7 @@ export default function QuienesSomosPage() {
               <p className="mb-5 font-serif text-xl text-slate/80 sm:text-2xl">
                 Asesoramiento en decisiones de salud
               </p>
-              <p className="text-terracotta font-medium mb-4 tracking-wide uppercase text-sm">
+              <p className="text-terracotta-dark font-medium mb-4 tracking-wide uppercase text-sm">
                 Quiénes Somos
               </p>
               <h1 className="font-serif text-3xl font-semibold text-slate text-balance sm:text-4xl">
@@ -124,7 +145,7 @@ export default function QuienesSomosPage() {
                 href="https://calendar.app.google/vhVL6J277Zmc8qSQ9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg border border-terracotta px-8 py-4 font-medium text-terracotta transition-colors hover:bg-terracotta/10"
+                className="inline-flex items-center justify-center rounded-lg border border-terracotta px-8 py-4 font-medium text-terracotta-dark transition-colors hover:bg-terracotta/10"
               >
                 Solicitar Entrevista
               </a>

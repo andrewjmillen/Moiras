@@ -80,10 +80,16 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-5 border-t border-velvet/20 pt-4">
-          <p className="text-center text-xs text-cream/40">
+        <div className="mt-5 flex flex-col items-center justify-center gap-2 border-t border-velvet/20 pt-4 sm:flex-row sm:gap-6">
+          <p className="text-center text-xs text-cream/70">
             {new Date().getFullYear()} Moiras. Todos los derechos reservados.
           </p>
+          <Link
+            href="/privacidad"
+            className="text-xs text-cream/70 underline underline-offset-2 transition-colors hover:text-cream"
+          >
+            Política de privacidad
+          </Link>
         </div>
       </div>
     </footer>

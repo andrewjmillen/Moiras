@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { bookingUrl } from "@/lib/site";
 
 const navItems = [
   { label: "Inicio", href: "/" },
@@ -43,6 +44,14 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <a
+              href={bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-slate px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:bg-slate/90"
+            >
+              Solicitar Entrevista
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -50,7 +59,9 @@ export function Header() {
             type="button"
             className="lg:hidden p-2 text-slate"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
           >
             <svg
               className="h-6 w-6"
@@ -78,7 +89,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="lg:hidden pb-4">
+          <nav id="mobile-navigation" className="lg:hidden pb-4">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
@@ -90,6 +101,15 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+              <a
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 rounded-lg bg-slate px-4 py-3 text-center text-sm font-medium text-cream transition-colors hover:bg-slate/90"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Solicitar Entrevista
+              </a>
             </div>
           </nav>
         )}
