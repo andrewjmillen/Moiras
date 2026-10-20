@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { MoirasStory } from "@/components/moiras-story";
 
 export const metadata = {
   title: "Quiénes Somos | Moiras",
@@ -100,8 +99,6 @@ export default function QuienesSomosPage() {
             </div>
           </div>
         </section>
-
-        <MoirasStory />
 
         {/* CTA Section */}
         <section className="py-10 lg:py-10 bg-terracotta/10">
