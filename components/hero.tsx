@@ -27,7 +27,7 @@ export function Hero() {
               Cuidado Integral
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-slate leading-tight text-balance">
-              Acompañamiento clínico, ético y legal para decidir sobre salud y los cuidados a lo largo de la vida.
+              Acompañamiento clínico, ético y legal para decidir sobre salud y cuidados a lo largo de la vida.
             </h1>
             <p className="mt-6 text-lg text-slate/70 leading-relaxed">
               <strong className="font-semibold text-slate">
