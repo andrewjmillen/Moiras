@@ -24,15 +24,13 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="max-w-xl">
             <p className="text-terracotta font-medium mb-4 tracking-wide uppercase text-sm">
-              Acompañamiento Integral
+              Cuidado Integral
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-slate leading-tight text-balance">
-              Cuidado humano en los procesos de final de vida
+              Acompañamiento clínico, ético y legal en enfermedad avanzada y final de vida
             </h1>
             <p className="mt-6 text-lg text-slate/70 leading-relaxed">
-              Brindamos acompañamiento integral en los procesos de final de vida
-              y cronicidad avanzada, desde una perspectiva interdisciplinaria
-              que contempla lo médico, lo social, lo legal y lo humano.
+              Asesoramos y acompañamos cuando decidir no es fácil, cuando las respuestas no son evidentes.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link
