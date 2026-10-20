@@ -33,9 +33,9 @@ export function Hero() {
               <strong className="font-semibold text-slate">
                 Cada vida, sus circunstancias. Cada decisión, su importancia.
               </strong>
-              <br />
-              Ofrecemos asesoramiento interdisciplinario para anticipar decisiones, ejercer derechos y abordar situaciones complejas relacionadas con la salud y los cuidados.
-              <br />
+              <span className="my-6 block">
+                Ofrecemos asesoramiento interdisciplinario para anticipar decisiones, ejercer derechos y abordar situaciones complejas relacionadas con la salud y los cuidados.
+              </span>
               Para personas, familias y equipos de salud.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
