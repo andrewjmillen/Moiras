@@ -50,7 +50,7 @@ export default function QuienesSomosPage() {
               <p className="text-terracotta font-medium mb-4 tracking-wide uppercase text-sm">
                 Quiénes Somos
               </p>
-              <h1 className="text-4xl sm:text-5xl font-serif font-semibold text-slate text-balance">
+              <h1 className="font-serif text-3xl font-semibold text-slate text-balance sm:text-4xl">
                 Un equipo interdisciplinario comprometido con el cuidado
               </h1>
               <p className="mt-6 text-lg text-slate/70 leading-relaxed max-w-2xl mx-auto">
@@ -113,12 +113,22 @@ export default function QuienesSomosPage() {
               Estamos aquí para acompañarte. Contactanos para una consulta
               inicial sin compromiso.
             </p>
-            <Link
-              href="/#contacto"
-              className="inline-flex items-center justify-center px-8 py-4 bg-terracotta text-cream font-medium rounded-lg hover:bg-terracotta/90 transition-colors"
-            >
-              Contactanos
-            </Link>
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/#contacto"
+                className="inline-flex items-center justify-center rounded-lg bg-terracotta px-8 py-4 font-medium text-cream transition-colors hover:bg-terracotta/90"
+              >
+                Contactanos
+              </Link>
+              <a
+                href="https://calendar.app.google/vhVL6J277Zmc8qSQ9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-lg border border-terracotta px-8 py-4 font-medium text-terracotta transition-colors hover:bg-terracotta/10"
+              >
+                Solicitar Entrevista
+              </a>
+            </div>
           </div>
         </section>
       </main>

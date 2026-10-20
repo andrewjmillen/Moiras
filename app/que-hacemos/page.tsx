@@ -60,12 +60,22 @@ export default function QueHacemosPage() {
             <p className="mx-auto mb-8 max-w-2xl text-lg text-slate/70">
               Estamos aquí para acompañarte. Contactanos para una consulta inicial sin compromiso.
             </p>
-            <Link
-              href="/#contacto"
-              className="inline-flex items-center justify-center rounded-lg bg-terracotta px-8 py-4 font-medium text-cream transition-colors hover:bg-terracotta/90"
-            >
-              Contactanos
-            </Link>
+  <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+  <Link
+  href="/#contacto"
+  className="inline-flex items-center justify-center rounded-lg bg-terracotta px-8 py-4 font-medium text-cream transition-colors hover:bg-terracotta/90"
+  >
+  Contactanos
+  </Link>
+  <a
+  href="https://calendar.app.google/vhVL6J277Zmc8qSQ9"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center rounded-lg border border-terracotta px-8 py-4 font-medium text-terracotta transition-colors hover:bg-terracotta/10"
+  >
+  Solicitar Entrevista
+  </a>
+  </div>
           </div>
         </section>
       </main>

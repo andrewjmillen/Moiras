@@ -19,10 +19,6 @@ export function Footer() {
                 Moiras
               </span>
             </Link>
-            <p className="text-cream/60 text-sm max-w-sm leading-relaxed">
-              Acompañamiento integral en procesos de final de vida y cronicidad
-              avanzada, desde una perspectiva humana e interdisciplinaria.
-            </p>
           </div>
 
           <div className="flex items-center justify-end">

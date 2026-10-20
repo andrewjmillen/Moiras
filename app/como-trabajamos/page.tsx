@@ -86,7 +86,7 @@ export default function ComoTrabajamosPage() {
             <p className="mb-4 text-sm font-medium uppercase tracking-wide text-terracotta">
               CÓMO TRABAJAMOS
             </p>
-            <h1 className="font-serif text-4xl font-semibold text-slate text-balance sm:text-5xl">
+            <h1 className="font-serif text-3xl font-semibold text-slate text-balance sm:text-4xl">
               Integramos saberes para construir caminos posibles.
             </h1>
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate/70">
@@ -125,12 +125,22 @@ export default function ComoTrabajamosPage() {
             <p className="mx-auto mb-8 max-w-2xl text-lg text-slate/70">
               Estamos aquí para acompañarte. Contactanos para una consulta inicial sin compromiso.
             </p>
-            <Link
-              href="/#contacto"
-              className="inline-flex items-center justify-center rounded-lg bg-terracotta px-8 py-4 font-medium text-cream transition-colors hover:bg-terracotta/90"
-            >
-              Contactanos
-            </Link>
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/#contacto"
+                className="inline-flex items-center justify-center rounded-lg bg-terracotta px-8 py-4 font-medium text-cream transition-colors hover:bg-terracotta/90"
+              >
+                Contactanos
+              </Link>
+              <a
+                href="https://calendar.app.google/vhVL6J277Zmc8qSQ9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-lg border border-terracotta px-8 py-4 font-medium text-terracotta transition-colors hover:bg-terracotta/10"
+              >
+                Solicitar Entrevista
+              </a>
+            </div>
           </div>
         </section>
       </main>

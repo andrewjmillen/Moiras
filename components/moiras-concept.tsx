@@ -1,13 +1,10 @@
 export function MoirasConcept() {
   return (
-    <section className="bg-potter/30 py-16 lg:py-24">
+    <section className="bg-potter/30 py-8 lg:py-12">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <p className="mb-4 text-sm font-medium uppercase tracking-wide text-terracotta">
           Relato breve de un concepto
         </p>
-        <h2 className="mb-8 font-serif text-3xl font-semibold text-slate sm:text-4xl">
-          MOIRAS: distintas miradas, una forma integral de cuidar
-        </h2>
         <div className="space-y-6 text-lg leading-relaxed text-slate/75">
           <p>
             En griego antiguo, μοῖρα (moîra) significa, en su sentido más básico, parte, porción: aquello que corresponde a alguien. De allí deriva su sentido de destino, entendido no necesariamente como algo predeterminado e inmodificable, sino como la parte de existencia que toca vivir: una circunstancia, una condición, un límite.
