@@ -7,9 +7,9 @@ import { ApproachTools } from "@/components/approach-tools";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Qué Hacemos | Moiras",
+  title: "Moiras | Servicios y Consultoría Bioética | Argentina",
   description:
-    "Acompañamos decisiones complejas con claridad, cuidado y una mirada interdisciplinaria.",
+    "Orientación y elaboración de directivas anticipadas de salud, voluntades anticipadas (Ley 26.742) y acompañamiento en decisiones complejas de atención médica",
   path: "/que-hacemos",
 });
 
