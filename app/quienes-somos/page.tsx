@@ -7,9 +7,9 @@ import { MoirasConcept } from "@/components/moiras-concept";
 import { pageMetadata, siteUrl } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Quiénes Somos | Moiras",
+  title: "Moiras | Equipo Profesional",
   description:
-    "Conocé al equipo interdisciplinario de Moiras y nuestra mirada humana, médica, social y legal sobre los procesos de final de vida.",
+    "Conocé a los integrantes de Moiras: especialistas en bioética clínica, derecho de la salud, medicina y trabajo social con trayectoria institucional en Argentina.",
   path: "/quienes-somos",
 });
 
