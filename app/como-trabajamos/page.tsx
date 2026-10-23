@@ -5,9 +5,9 @@ import { Footer } from "@/components/footer";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Cómo Trabajamos | Moiras",
+  title: "Moiras | Consultoría en Bioética | Cómo Trabajamos | Argentina",
   description:
-    "Conocé cómo acompañamos decisiones de salud desde una mirada integral, humanizada e interdisciplinaria.",
+    "Descubrí nuestro proceso de atención: entrevistas personalizadas, evaluación bioética y confidencialidad para orientar decisiones de salud informadas.",
   path: "/como-trabajamos",
 });
 
