@@ -26,7 +26,7 @@ export function pageMetadata({
   return {
     title,
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: new URL(path, siteUrl).toString() },
     openGraph: {
       type: "website",
       locale: "es_AR",
