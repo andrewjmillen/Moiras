@@ -23,13 +23,6 @@ const teamMembers = [
     bio: "Abogado. Procurador (UBA). Diplomado en Salud Pública. Docente Universitario. Vicepresidente RedBioética UNESCO. Asesor Dirección Médica Htal. Fco. Javier Muñiz. Coordinador Comités de Bioética Sanatorios Finochietto y Otamendi. Miembro Comisiones Directivas de la Asociación Argentina de Salud Pública (AASAP), Sociedad Argentina de Vacunología y Epidemiologia (SAVE). Asesor Jurídico de la Sociedad Argentina de Infectología (SADI), de la Sociedad Argentina de Reumatología (SAR), de la Sociedad Argentina de Diabetología. Coordinador de Área de Promoción de Derechos de Fundación Huésped. Miembro del Comité Internacional de Bioética de la UNESCO (IBC).",
   },
   {
-    name: "Débora Lema",
-    role: "Lic. Trabajo Social",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lema-25sGaMc97e2DDsRD94yeRZrw5rAJni.jpg",
-    bio: "Lic. Trabajo Social, Magíster en Cuidados Paliativos, Especialista en políticas del cuidado con perspectiva de género, Diplomada en Bioética. Jefa de Sección Servicio Social, integrante del equipo de Cuidados Paliativos y Coordinadora del Comité de Gestión de Calidad del Hospital C. B. Udaondo. Integrante de la Comisión Asesora de Pallium Latinoamérica, desempeñando funciones de asistencia, docencia e investigación. Miembro de la Comisión Directiva de la AAMYCP (Asociación Argentina de Medicina y Cuidados Paliativos) y secretaria del Comité de Bioética de SATI (Sociedad Argentina de Terapia Intensiva). Co-Directora del Centro de estudios y Observatorio de Bioética de la Universidad ISALUD.",
-  },
-  {
     name: "Analía Occhiuzzi",
     role: "Médica",
     image:
