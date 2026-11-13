@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Moiras | Consultoría en Bioética | Cómo Trabajamos | Argentina",
+  title: "Moiras | Consultoría en Bioética | Directivas Anticipadas | Argentina",
   description:
     "Descubrí nuestro proceso de atención: entrevistas personalizadas, evaluación bioética y confidencialidad para orientar decisiones de salud informadas.",
   path: "/como-trabajamos",

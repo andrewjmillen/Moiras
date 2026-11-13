@@ -7,7 +7,7 @@ import { MoirasConcept } from "@/components/moiras-concept";
 import { pageMetadata, siteUrl } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Moiras | Equipo Profesional",
+  title: "Moiras | Equipo Profesional | Argentina",
   description:
     "Conocé a los integrantes de Moiras: especialistas en bioética clínica, derecho de la salud, medicina y trabajo social con trayectoria institucional en Argentina.",
   path: "/quienes-somos",
