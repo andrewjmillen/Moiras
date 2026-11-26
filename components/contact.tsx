@@ -104,7 +104,7 @@ export function Contact() {
                       rel="noopener noreferrer"
                       className="text-cream/70 hover:text-terracotta transition-colors"
                     >
-                      Escribinos por WhatsApp
+                      Escribinos por WhatsApp · 11 5478 5428
                     </a>
                   </div>
                 </div>

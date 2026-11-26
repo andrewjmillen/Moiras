@@ -24,7 +24,8 @@ export function WhatsAppButton() {
           d="M4 20l1.3-4.2A8 8 0 1 1 8.4 18.8L4 20z"
         />
       </svg>
-      Escribinos por WhatsApp
+      <span>Escribinos por WhatsApp</span>
+      <span className="whitespace-nowrap text-cream/75">11 5478 5428</span>
     </a>
   );
 }
