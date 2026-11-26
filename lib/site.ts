@@ -6,7 +6,7 @@ export const bookingUrl = "https://calendar.app.google/vhVL6J277Zmc8qSQ9";
 export const contactEmail = "consultoriomoiras@gmail.com";
 export const instagramUrl = "https://instagram.com/consultoriomoiras";
 
-const whatsappDigits = (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "").replace(/\D/g, "");
+const whatsappDigits = "5491154785428";
 
 export const whatsappUrl = whatsappDigits
   ? `https://wa.me/${whatsappDigits}?text=${encodeURIComponent(

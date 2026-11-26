@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
-import { WhatsAppButton } from "@/components/whatsapp-button";
 import { contactEmail, instagramUrl, siteName, siteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -100,7 +99,6 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         {children}
-        <WhatsAppButton />
         <Analytics />
         <SpeedInsights />
       </body>
